@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exxen</title>
+  </head>
+  <body>
+      <div id="nav-color">
+    <nav class="navbar navbar-expand-md navbar-dark py-4"
+    id="navbar-body">
+        
+      <div class="container" style="width: 1000px;">
+        <a href="#" class="navbar-brand">
+          <img src="exxenn.png" alt="Exxen" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobile"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-end"
+        id="right-click">
+
+        
+        <div id="mobile" class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+              id="responsive-nav-1"
+                href="#"
+                class=" nav-link border border-dark bg-dark  me-2 px-5"
+                >EXXENSPOR Ticari Üye Ol</a
+              >
+            </li>
+            <li class="nav-item-2">
+              <a
+                href="#"
+                id="nav-item-sign-login"
+                class="nav-link text-dark border border-dark"
+                style="text-align: center;"
+                >Üye Girişi</a
+              >
+            </li>
+          </div>
+            <!-- dropdown select lang disable-->
+            <div class="dropdownSelect-menu">
+                <img class="lang-icon" src="">
+                <i class="fa-sharp fa-solid fa-language"></i>
+                <select class="filterSelectOption shortened-select" id="filterLanguage" onchange="SelectLanguage(this.options[this.selectedIndex].value)">
+                            <option class="link hide-in-mobile" value="TR" selected="">TR</option>
+                            <option class="link hide-in-mobile" value="EN" >EN</option>
+                            <option class="link hide-in-mobile" value="AR" >AR</option>
+                            <option class="link hide-in-mobile" value="ES" >ES</option>
+                </select>
+            </div>
+            <!-- dropdown select lang disable end -->
+          </ul>
+          
+        </div>
+     </div>
+    </div>
+  </nav>
+</div>
+    <div class="cont-div">
+    <div class="row">
+
+      <!-- Since I want the sign-up screen I coded to stay fixed while dragging it down on the page screen, I give it sticky to its position and fix it by saying top-0 left-0. -->
+
+        <div id="sign-up-screen" class="col d-flex bg-dark p-3" style="
+        margin-bottom: 20px;
+        font-family: 'MyrProBoldCond';
+        position: sticky;
+        top: 0 ;
+        left: 0;">
+
+        <!-- Since I want the sign-up form to be side by side and occupy 4 for the 12 area on a certain plane, I divide the 12 by 3 and arrange them on the x plane with col-4. -->
+
+            <form class="d-flex col-4" id="form-resp-name">
+                <input type="text" class="form-control fw-bold p-3 me-3" placeholder="Adı Soyadı" />
+                </button>
+              </form>
+              <form class="d-flex col-4" id="form-resp-email">
+                <input type="text" class="form-control fw-bold me-3 " placeholder="E-Posta Adresi" />
+                </button>
+              </form>
+                <button id="btn-sign-up" class="btn btn-warning border border-dark col-4" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                  ÜYE OL
+                </button>
+              </form>
+              
+        </div>
+        <img src="exxen.jpg" alt="Exxen" class="mt-4" id="exxen-photo">
+
+        <!-- Film Cards -->
+
+        <!-- INFO
+
+          I put all the cards in a div first. Then I position them for large-medium and small screens by putting them in a div in col-row structures. Then, in the inline style files, I leave a space in the margin-top part by saying mt-5 in the class and apply it to all of them with a certain interval on the x plane by saying mx-2.
+        
+        -->
+        
+            <div class="flex-film-cards" id="cards-pos">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2" style="width: 14rem;">
+                <img src="/Exxen/img/şampiyonlarligi.webp" class="card-img" alt="Şampiyonlar ligi">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Şampiyonlar Ligi</p>
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 " style="width: 14rem;">
+                <img src="/Exxen/img/avrupaligi.webp" class="card-img" alt="Avrupa ligi">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Avrupa Ligi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 " style="width: 14rem;">
+                <img src="/Exxen/img/avrupakonferansligi.webp" class="card-img" alt="Avrupa konferans ligi">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Avrupa Konferans Ligi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/konuşanlar.webp" class="card-img" alt="Konuşanlar">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Konuşanlar</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/sadecearkadaşız.webp" class="card-img" alt="Sadece Arkadaşız">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Sadece Arkadaşız</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/sizidinliyorum.webp" class="card-img" alt="Sizi Dinliyorum">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Sizi Dinliyorum</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/gibi.webp" class="card-img" alt="Gibi">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Gibi</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/leylailemecnun.webp" class="card-img" alt="Leyla ile Mecnun">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Leyla ile Mecnun</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/tolgashow-filtresiz.webp" class="card-img" alt="tolgshow">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Tolgshow Filtresiz</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/kralşakircumburlop.webp" class="card-img" alt="Kral şakir cumburlop">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Kral Şakir Cumburlop</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/Türkiyedekiserikatiller.webp" class="card-img" alt="Türkiyedeki seri katiller">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Türkiye'deki Seri Katiller</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/aşkkumardır.webp" class="card-img" alt="Aşk Kumardır">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Aşk Kumardır</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/dominiktegörmedikleriniz.webp" class="card-img" alt="Dominik">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Dominik'te Görmedikleriniz Bilmedikleriniz</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/ilginçbazıolaylar.webp" class="card-img" alt="İlninç Bazı Olaylar">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">İlginç Bazı Olaylar</p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card bg-black mt-5 mx-2 col-lg-3 col-md-4 col-sm-6" style="width: 14rem;">
+                <img src="/Exxen/img/enesbaturilebuluşma.webp" class="card-img" alt="Enes Batur'la Buluşma">
+                <div class="card-body">
+                  <p class="card-text" style=" font-size:15px; text-align: center; font-weight:bold; color:white ">Enes Batur'la Buluşma</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <img style="width: 40%; margin:auto;" class=" mt-5" src="/Exxen/img/footer-bölümü-photo.svg" alt="">
+    <div id="text-info" style="margin-top:30px;">
+    <p style="font-size:20px; font-weight:bold; color:white; padding:30px; text-align:center;">Hemen üye ol, cepte, tablette, bilgisayarda, istediğin zaman, istediğin yerde exxen.com, Google Play, AppGallery, App Store, Apple TV ve Android TV'den izlemeye başla.</p>
+<div style="text-align: center;">
+    <img style="width: 170px; margin:5px" src="//wimage.exxen.com/img/app-store-2.svg" alt="Ios">
+    <img style="width: 155px; margin:5px;" alt="Google Play'den alın" src="//wimage.exxen.com/img/google-play@3x.png">
+    <img style="width: 155px; margin:5px;" src="//wimage.exxen.com/img/landing/huawei-app-gallery@3x.png">
+  </div>
+
+  <div class="icons-button" style="text-align: center; font-size:30px; color:white; margin-top:40px">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-tiktok"></i>
+
+  </div> 
+  </div>
+  </div>
+  <div class="ground">
+    <h1>TOLGA UĞURLU</h1>
+    </div>
+      <footer>
+        <div class="footer_container">
+            <p>Tolga Full Stack Developer © 2022 All Rights Reserved.</p>
+          </div>
+      </footer>
+  </div>
+</div>
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

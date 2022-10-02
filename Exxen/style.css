@@ -1,0 +1,389 @@
+/* #ffcb26 - bg nav and cont body*/
+/*  ▼   - drpdwn selector ıcon */
+/* MyrProSemiboldCond - Filter font-family */
+/* Inter Regular - filter lang font-family */
+/*#212121; - filter selected bg color*/
+
+/* CONT DESİGN - DEFAULT MNG */
+body {
+  background-color: black;
+}
+
+/* NAVBAR */
+#nav-color {
+  width: 100%;
+  background-color: #ffcb26;
+}
+#navbar-body {
+  width: 80%;
+  margin: auto;
+}
+.cont-div {
+  width: 75%;
+  height: 100vh;
+  margin: auto;
+  background-color: black;
+}
+.navbar-nav > .nav-item > a {
+  color: #ffcb26 !important;
+  border-radius: 5px;
+}
+/* NAVBAR FINISHED */
+
+/* SIMPLE BTN DESIGN FOR APP */
+.btn {
+  background: #ffcb26;
+}
+
+/* BTN DESIGN FINISHED */
+
+/* NAV BR-IMG-MOBILE DESIGN  */
+
+.navbar-brand img {
+  width: 280px;
+}
+#nav-item-sign-login {
+  font-weight: 700;
+}
+#btn-sign-up {
+  font-weight: 700;
+}
+#mobile {
+  transition: all 0.6s;
+}
+input[type="text"]:focus {
+  border: 3px solid #ffcb26;
+}
+
+#footer-btn {
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+  bottom: 27px;
+  right: 30px;
+}
+.icons-button i {
+  margin-bottom: 150px;
+  transition: all 0.6s;
+}
+.icons-button i:hover {
+  border: 10px;
+  border-radius: 100%;
+  box-shadow: 4px 6px 25px white;
+  transform: scale(1.2);
+  cursor: pointer;
+  color: #ffcb26;
+  transition: all 0.7s;
+}
+
+/* MOBILE FINISH */
+
+/* ------------------------------ */
+
+/* LANG DROPDOWN  */
+.dropdownSelect {
+  position: relative;
+  display: block;
+  margin: 12px 10px;
+  float: right;
+  overflow: hidden;
+  line-height: 5px;
+  margin-top: -3px;
+  border: solid 1px #616161;
+}
+
+.dropdownSelect-menu {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  margin-right: -5px;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdownSelect:after {
+  background: none;
+  color: #fff;
+  content: "▼";
+  font-size: 1em;
+  padding: 0;
+  position: absolute;
+  right: 1.3em;
+  top: 1.3em;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.dropdownSelect-menu:after {
+  background: none;
+  content: "▼";
+  top: 0;
+  font-size: 0.7em;
+  display: block;
+  z-index: 1;
+  position: relative;
+  pointer-events: none;
+}
+
+.dropdownSelect:hover {
+  border: 1px solid #888;
+}
+
+.headSection .dropdownSelect:hover {
+  border: 0;
+}
+
+.headSection .dropdownSelect:after {
+  right: 1em;
+  top: 0.9em;
+}
+
+.headSection .dropdownSelect #filterSelect {
+  height: inherit;
+  background-color: #212121;
+  color: #fff;
+}
+
+#filterSelect,
+#filterLanguage {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: "";
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
+  font-size: 1.4rem;
+  margin-left: 5px;
+  text-align: center;
+  font-family: "MyrProSemiboldCond" !important;
+  color: #222;
+  margin-right: 9px;
+  margin-top: -1px;
+}
+
+#filterLanguage {
+  border: none;
+  font-family: "Inter Regular";
+  width: 30px;
+}
+
+#filterLanguage option {
+  margin: 40px;
+  background: #111;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  border-color: #000;
+}
+
+#filterSelect::-ms-expand,
+#filterLanguage::-ms-expand {
+  display: none;
+}
+
+#filterSelect:focus,
+#filterLanguage::focus {
+  outline: none;
+}
+
+/* LANG DROPDOWN END */
+
+/* FOOTER START */
+.ground {
+  min-height: 100vh;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-bottom: 30px;
+  opacity: 50%;
+  border-top: 3px solid orange;
+  border-radius: 10px;
+  background: #faf5f5;
+  padding: 20px 0;
+  transition: all 0.6s;
+}
+footer:hover {
+  cursor: pointer;
+  opacity: 100%;
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 25px white;
+  border-radius: 10px;
+  transform: scaleY(1.2);
+  transition: all 0 0.6s;
+}
+
+.footer_container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer_container p {
+  margin: auto;
+  font-size: larger;
+}
+
+/* FOOTER  END */
+
+/* RESPONSİVE NEW DATA  */
+@media (max-width: 768px) {
+  .nav-item-2 {
+    padding: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .nav-item {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Starting from 1001 pixels, I make the position of the .nav-item class absolute so that it is positioned under the navbar. */
+
+@media (max-width: 1001px) {
+  .nav-item {
+    position: absolute;
+    top: 105px;
+    right: 4px;
+    display: block;
+    width: 98%;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+@media (max-width: 1001px) {
+  .container {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .dropdownSelect-menu {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 995px) {
+  #sign-up-screen {
+    width: 100%;
+    display: block !important;
+  }
+}
+@media (max-width: 995px) {
+  #btn-sign-up {
+    margin-top: 10px;
+    width: 100%;
+    display: block !important;
+  }
+}
+@media (max-width: 995px) {
+  #form-resp-email {
+    margin-top: 10px;
+    width: 100%;
+    display: block !important;
+  }
+}
+@media (max-width: 995px) {
+  #form-resp-name {
+    width: 100%;
+    display: block !important;
+  }
+}
+@media (max-width: 995px) {
+  .dropdownSelect-menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .nav-item-2 a {
+    border: none !important;
+  }
+}
+@media (min-width: 765px) and (max-width: 994) {
+  .card {
+    width: 100% !important;
+  }
+}
+@media (min-width: 990px) and (max-width: 1402px) {
+  .card {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  #exxen-photo {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 890px) {
+  .card {
+    width: 10rem !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 690px) {
+  .card {
+    width: 100% !important;
+  }
+}
+@media (min-width: 472px) and (max-width: 586px) {
+  .nav-item-2 {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    display: block;
+    width: 100%;
+  }
+  .container {
+    padding-bottom: 80px;
+  }
+}
+/* RESPONSİVE DISABLED - NOT AVAILABLE - */
+
+/* @media (max-width: 600px) {
+  #responsive-nav-1 {
+    display: block;
+    width: 100%;
+  }
+} */
+/* @media (min-width: 576px) {
+  .cont-div {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cont-div {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .cont-div {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .cont-div {
+    width: 80%;
+  }
+} */
